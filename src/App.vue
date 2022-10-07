@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Walekum Assalam Khatib Bhai" />
+  <div>
+    <!-- <TicketPrinter /> -->
+    <!-- <CrudOperation /> -->
+    <MonsterGame />
+    <!-- <CurrancyConvert /> -->
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import TicketPrinter from "@/components/TicketPrinter.vue";
+// import CrudOperation from '@/components/CrudOperation'
+import MonsterGame from '@/components/MonsterGame'
+// import CurrancyConvert from "@/components/CurrancyConvert.vue";
 
 export default {
-  name: "App",
   components: {
-    HelloWorld,
+    //  TicketPrinter
+    // CrudOperation
+    MonsterGame,
+    // CurrancyConvert,
   },
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style scoped></style>
