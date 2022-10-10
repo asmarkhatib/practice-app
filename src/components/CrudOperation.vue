@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       inp: "",
-      data: [1, 2, 3],
+      data: [],
       edit: null,
     };
   },
