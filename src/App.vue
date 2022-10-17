@@ -5,7 +5,9 @@
     <!-- <CrudOperation /> -->
     <!-- <MonsterGame /> -->
     <!-- <CurrancyConvert /> -->
-    <ConditionContent />
+    <!-- <ConditionContent /> -->
+    <!-- <MainAppForAU /> -->
+    <FriendsContact />
   </div>
 </template>
 
@@ -15,7 +17,9 @@
 // import MonsterGame from '@/components/MonsterGame'
 // import CurrancyConvert from "@/components/CurrancyConvert.vue";
 // import SipCalculator from "@/components/SipCalculator.vue";
-import ConditionContent from "@/components/ConditionalContent.vue";
+// import ConditionContent from "@/components/ConditionalContent.vue";
+// import MainAppForAU from "@/components/MainAppForAU.vue";
+import FriendsContact from "@/components/FriendsContact.vue";
 
 export default {
   components: {
@@ -24,7 +28,9 @@ export default {
     // MonsterGame,
     // CurrancyConvert,
     // SipCalculator,
-    ConditionContent,
+    // ConditionContent,
+    // MainAppForAU,
+    FriendsContact,
   },
 };
 </script>

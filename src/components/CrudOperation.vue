@@ -1,9 +1,11 @@
 <template>
   <div>
+    <input type="text" v-model="search" placeholder="search" />
     <input type="text" placeholder="Add" v-model="inp" />
     <button @click="add">Add</button>
+
     <ul>
-      <li v-for="(item, index) in data" :key="index">
+      <li v-for="(item, index) in filteredSearch" :key="index">
         {{ item }} <button @click="removeItem(index)">X</button
         ><button @click="editItem(index)">edit</button>
       </li>
@@ -18,8 +20,13 @@ export default {
       inp: "",
       data: [],
       edit: null,
+      search: "",
     };
   },
+  created() {
+    this.data = ["saqeb"];
+  },
+  
   methods: {
     add() {
       if (this.edit === null) {
@@ -43,6 +50,13 @@ export default {
         }
       });
       this.edit = ind;
+    },
+  },
+  computed: {
+    filteredSearch() {
+      return this.data.filter((item) => {
+        return item.toLowerCase().includes(this.search.toLowerCase());
+      });
     },
   },
 };
